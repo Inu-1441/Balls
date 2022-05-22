@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        /* overflow: hidden; */
+        color: #48351B;
+        font-family: 'Nunito', sans-serif;
+        transition: all .3s ease;
+    }
+    
+    html {
+        font-size: 62.5%;
+    }
+    
+    section {
+        height: 100vh;
+        background: url(./Img/hero.png) center center no-repeat;
+        background-attachment: fixed;
+        background-size: 100% auto;
+        background-position: bottom;
+    }
+    
+    .logo {
+        height: 1.6rem;
+    }
+    
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 3.2rem 14rem;
+    }
+    
+    .nav-list {
+        list-style: none;
+        display: flex;
+        gap: 3rem;
+    }
+    
+    .list-link:hover,
+    .list-link:active {
+        color: #fff;
+    }
+    
+    .list-link--bubble {
+        background-color: rgb(128, 128, 128, 0.5);
+        padding: 1rem 2.4rem;
+        backdrop-filter: blur(1);
+        border-radius: 100px;
+        backdrop-filter: blur;
+    }
+    
+    .list-link--bubble:hover {
+        background-color: rgb(72, 53, 27, 0.5);
+    }
+    
+    .list-link {
+        font-size: 1.4rem;
+        color: #000
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .text-box {
+        text-align: center;
+        margin-top: 9rem;
+    }
+    
+    .heading-prim {
+        font-size: 6.2rem;
+        font-family: 'Crimson Pro', serif;
+        font-weight: normal;
+        margin-bottom: 1.8rem;
+    }
+    
+    .body-text {
+        font-size: 1.8rem;
+        line-height: 1.8;
+        color: rgb(0, 0, 0, 0.8);
+        padding: 0 20%;
+        margin-bottom: 6.2rem;
+    }
+    
+    .btn--bubble {
+        background-color: rgb(128, 128, 128, 0.9);
+        padding: 1rem 2.4rem;
+        border-radius: 100px;
+    }
+    
+    .btn {
+        padding: 1.6rem 5rem;
+        background-color: #48351B;
+        border-radius: 100px;
+        color: #fff;
+        font-size: 1.6rem;
+        margin-right: 3rem;
+    }
+    
+    .btn--ghost {
+        background-color: rgb(0, 0, 0, 0);
+        border: #000 1px solid;
+    }
+    
+    .btn--ghost:hover {
+        background-color: rgb(0, 0, 0, 0);
+        border: rgb(255, 255, 255) 1px solid;
+        color: #000;
+    }
+    
+    .btn--cta:hover {
+        background-color: rgb(128, 128, 128, 0.5);
+        color: #000;
+    }
+</style>
+
+<body>
+    <section class="section-hero">
+
+        <nav class="nav">
+            <div class="logo-box">
+                <img src="./Img/logo.png" alt="" class="logo">
+            </div>
+            <ul class="nav-list">
+                <li class=""><a href="#" class="list-link">Products</a> </li>
+                <li class=""><a href="#" class="list-link">Features</a> </li>
+                <li class=""><a href="#" class="list-link">Pricing</a> </li>
+                <li class=""><a href="#" class="list-link">Blog</a> </li>
+                <li class=""><a href="#" class="list-link list-link--bubble">Sign Up</a> </li>
+            </ul>
+        </nav>
+        <div class="text-box">
+            <h1 class="heading-prim">Your adventure travel expert in Iceland</h1>
+            <p class="body-text">With so much to see and do in Iceland, it can be hard to choose an activity. Our diverse selection includes hiking, caving, glacier walks, mountain climbing, hunting for the Northern Lights and more!</p>
+            <a href="#" class="btn btn--cta">Try Now</a>
+            <a href="#" class="btn btn--ghost">Sign Up</a>
+        </div>
+    </section>
+</body>
+
+</html>
